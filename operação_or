@@ -2,9 +2,9 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
 entity operação_or is
-port ( aor : in STD_LOGIC;
-       bor : in  STD_LOGIC;
-       cor : out STD_LOGIC);
+port ( aor : in bit_vector(3 downto 0);
+       bor : in  bit_vector(3 downto 0);
+       cor : out bit_vector)(3 downto 0);
        
 end operação_or; 
 
@@ -12,7 +12,10 @@ architecture Behavioral of operação_or is
 
 begin 
 
-cor <= aor or bor
+cor(0) <= aor(0) or bor(0)
+cor(1) <=  aor(1) or bor(1)
+cor(2) <=  aor(2) or bor(2)
+cor(3) <=  aor(3) or bor(3)
 
 
 end Behavioral; 
