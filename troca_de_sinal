@@ -23,3 +23,5 @@ begin
   soma1 : somador1bit PORT MAP(  not(x(1)), 0 , v(1), s(1), v(2));
   soma2 : somador1bit PORT MAP(  not(x(2)), 0 , v(2), s(2), v(3)); 
   soma3 : somador1bit PORT MAP(  not(x(3)), 0 , v(3), s(3), carryout);
+
+end hardware;
