@@ -1,0 +1,21 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity decodificador is
+port ( d  : in bit_vector(3 downto 0);
+       cd  : out bit_vector(3 downto 0)
+       ovf : out std_logic; 
+end decodificador; 
+
+architecture Behavioral of decodificador is 
+
+begin 
+
+cd(0) <= (not ad(3))and(not ad(2))and(not ad(1))and(not ad(0));
+cd(1) <= (not ad(3))and(not ad(2))and(not ad(1))and ad(0);
+cd(2) <= (not ad(3))and(not ad(2))and ad(1)and(not ad(0));
+cd(3) <= (not ad(3))and(not ad(2))and ad(1) and  ad(0);
+ovf   <= ad(3) or ad(2);
+
+
+end Behavioral; 
