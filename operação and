@@ -1,0 +1,18 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity operação_and is
+port ( aa : in STD_LOGIC;
+       ba : in  STD_LOGIC;
+       ca : out STD_LOGIC);
+       
+end operação_and; 
+
+architecture Behavioral of operação_and is 
+
+begin 
+
+ca <= aa and ba
+
+
+end Behavioral; 
