@@ -1,0 +1,25 @@
+comparador
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity comparacao is
+
+	port(
+		a : in std_logic_vector(3 downto 0);
+		b : in std_logic_vector(3 downto 0); 
+      	equal, agreater, bgreater : out std_logic
+	);
+
+end comparacao;
+
+architecture abcl of comparacao is
+	
+begin
+    	
+	agreater <= 1 when (a > b) else '0';
+	bgreater <= 1 when (a < b) else '0';
+	equal <= 1 when (a = b) else '0';
+	
+end abcl;
+
