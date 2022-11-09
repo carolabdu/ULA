@@ -1,6 +1,8 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
+-- esse módulo faz a operação or com cada bit das duas entradas
+
 entity operação_or is
 port ( aor : in bit_vector(3 downto 0);
        bor : in  bit_vector(3 downto 0);
@@ -12,10 +14,10 @@ architecture Behavioral of operação_or is
 
 begin 
 
-cor(0) <= aor(0) or bor(0)
-cor(1) <=  aor(1) or bor(1)
-cor(2) <=  aor(2) or bor(2)
-cor(3) <=  aor(3) or bor(3)
+cor(0) <= aor(0) or bor(0);
+cor(1) <=  aor(1) or bor(1);
+cor(2) <=  aor(2) or bor(2);
+cor(3) <=  aor(3) or bor(3);
 
 
 end Behavioral; 
