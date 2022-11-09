@@ -19,7 +19,7 @@ architecture hardware of somador4bits is
 
 begin 
   
-  soma0 : somador1bit PORT MAP(  x(0), y(0), carryin, s(0),  v(1));
+  soma0 : somador1bit PORT MAP(  x(0), y(0), carryin, s(0),  v(1));    - usando o somador de 1 bit para cada bit 
   soma1 : somador1bit PORT MAP(  x(1), y(1), v(1), s(1), v(2));
   soma2 : somador1bit PORT MAP(  x(2), y(2), v(2), s(2), v(3)); 
   soma3 : somador1bit PORT MAP(  x(3), y(3), v(3), s(3), carryout);
