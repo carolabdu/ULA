@@ -1,10 +1,12 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
+-- uma subtração equivale a uma soma em que a segunda entrada tem seu sinal invertido, então usamos a ideia do somador e fizemos os devidos ajustes 
+
 entity subtração is 
 port (x,y : in std_logic_vector(3 downto 0);     --vetores de entrada
       carryin : in std_logic;                    --carry in geral
-      s : out std_logic_vector(3 downto 0);      --soma 
+      s : out std_logic_vector(3 downto 0);      --resultado 
       carryout : out std_logic);                  --carry out geral
 end subtração;
 
