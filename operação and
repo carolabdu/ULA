@@ -12,10 +12,10 @@ architecture Behavioral of operação_and is
 
 begin 
 
-ca(0) <= aa(0) and ba(0)
-ca(1) <= aa(1) and ba(1)
-ca(2) <= aa(2) and ba(2)
-ca(3) <= aa(3) and ba(3)
+ca(0) <= aa(0) and ba(0);
+ca(1) <= aa(1) and ba(1);
+ca(2) <= aa(2) and ba(2);
+ca(3) <= aa(3) and ba(3);
 
 
 
